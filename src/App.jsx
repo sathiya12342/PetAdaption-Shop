@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PetAdoption-Shop">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
