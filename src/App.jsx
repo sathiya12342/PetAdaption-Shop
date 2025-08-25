@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
+import { HashRouter, Routes, Route} from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
@@ -31,7 +31,7 @@ function App() {
 
 
   return (
-    <BrowserRouter basename="/PetAdoption-Shop">
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -46,7 +46,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+   </HashRouter>
   )
 }
 
